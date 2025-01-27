@@ -1,0 +1,123 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem; 
+    background-color: #fff;
+  }
+  
+  .header__links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .header__logo {
+    font-size: 2rem;
+    margin: 20px 0px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000; 
+  }
+  
+  .header__nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .header__link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333; 
+    transition: color 0.3s ease;
+  }
+  
+  .header__link:hover {
+    color: #000; 
+  }
+
+  .hero__section {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-image: url(e39m5v1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero__content {
+    padding: 0 1rem;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: -5%;
+  }
+
+  .home__explore {
+    height: 120vh;
+  }
+
+  .cars__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    row-gap: 3rem;
+    justify-content: center;
+    padding: 1rem;
+    padding-bottom: 0px;
+    padding: 100px 30px;
+  }
+
+  .car__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .image__container {
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .image__container img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    filter: grayscale(100%);
+    object-fit: cover;
+    transform-style: preserve-3d;
+  }
+  
+  .image__container img:hover {
+    transform: scale(1.07); 
+    filter: none;
+  }
+
+  .car__name {
+    font-size: 1.6rem;
+    margin: 10px 0px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000; 
+    display: block;
+  }

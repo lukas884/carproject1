@@ -25,7 +25,7 @@ body {
     margin: 20px 0px;
     font-weight: 700;
     text-decoration: none;
-    color: #000; 
+    color: #004225; 
   }
   
   .header__nav {
@@ -72,7 +72,7 @@ body {
   }
 
   .home__explore {
-    height: 120vh;
+    height: 145vh;
   }
 
   .cars__list {
@@ -82,8 +82,8 @@ body {
     row-gap: 3rem;
     justify-content: center;
     padding: 1rem;
-    padding-bottom: 0px;
-    padding: 100px 30px;
+    padding: 50px 30px;
+    padding-top: 70px;
   }
 
   .car__card {
@@ -120,4 +120,28 @@ body {
     text-decoration: none;
     color: #000; 
     display: block;
+  }
+
+  .cars__button {
+    background-color: #004225 ;
+    color: white;
+    border: none;
+    padding: 20px 32px;
+    width: 45%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cars__button:hover {
+    opacity: 90%;
+}
+
+  .cars__button__container {
+    display: flex;
+    justify-content: center;
   }

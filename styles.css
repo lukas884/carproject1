@@ -175,3 +175,61 @@ body {
     display: flex;
     justify-content: center;
   }
+
+  .home__about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .home__about__content {
+    color: black;
+    text-align: center;
+    width: 80%;
+    margin-top: -10%;
+  }
+
+  .home__about__content h1 {
+    font-size: 5rem;
+  }
+
+  .home__about__content p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .about__button {
+    background-color: #e1e1e1 ;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-top: 1.5rem;
+    width: 40%;
+}
+
+.about__button:hover{
+    background-color: #004225;
+    color: white;
+}
+
+.home__about__content img {
+    width: 30%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.about__main{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }

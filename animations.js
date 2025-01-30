@@ -56,3 +56,23 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(heroSection);
     observer.observe(heroContent);
 });
+
+document.querySelector('.to__top').addEventListener('click', function(e) {
+    e.preventDefault(); 
+    const header = document.querySelector('#header');
+    if (header) {
+        header.scrollIntoView({ behavior: 'smooth' });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".header__menu-toggle");
+    const navMenu = document.querySelector(".header__nav");
+
+    menuToggle.addEventListener("click", function () {
+        const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", !isExpanded);
+        navMenu.classList.toggle("open");
+        menuToggle.classList.toggle("active"); // For animation effect
+    });
+});

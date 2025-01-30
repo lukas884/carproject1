@@ -73,6 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
         menuToggle.setAttribute("aria-expanded", !isExpanded);
         navMenu.classList.toggle("open");
-        menuToggle.classList.toggle("active"); // For animation effect
+        menuToggle.classList.toggle("active"); 
     });
 });

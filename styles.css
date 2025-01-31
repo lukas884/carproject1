@@ -154,7 +154,7 @@ body {
     width: 100%;
     height: 100%; 
     background-color: #fff; 
-    animation: revealBackground 1.5s ease-out forwards; 
+    animation: revealBackground 1.2s ease-out forwards; 
 }
 
   .hero__content {
@@ -186,15 +186,39 @@ body {
     height: 200vh;
   }
 
+  .explore__container {
+    min-height: 100vh;
+    height: 340vh;
+    overflow: hidden;
+  }
+
+  .explore__container h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #222;
+  }
+
   @media(max-width: 1600px) {
     .home__explore{
         height: 180vh
     }
   }
 
-  @media(max-width: 1400px) {
+  @media(max-width: 1440px) {
     .home__explore{
         height: 160vh
+    }
+  }
+
+  @media(max-width: 1380px) {
+    .explore__container{
+        height: 310vh
+    }
+  }
+
+  @media(max-width: 1240px) {
+    .explore__container{
+        height: 280vh
     }
   }
 
@@ -202,15 +226,24 @@ body {
     .home__explore{
         height: 140vh
     }
-  }
 
-  @media(max-width: 1000px) {
-    .home__explore{
-        height: 130vh
+    .explore__container{
+        height: 260vh
     }
   }
 
-  @media(max-width: 1000px) {
+  @media(max-width: 1024px) {
+    .home__explore{
+        height: 130vh
+    }
+
+    .explore__container{
+        height: auto;
+        padding-bottom: 50px;
+    }
+  }
+
+  @media(max-width: 900px) {
     .home__explore{
         height: 120vh
     }
@@ -224,7 +257,11 @@ body {
     justify-content: center;
     padding: 1rem;
     padding: 50px 30px;
-    padding-top: 70px;
+    padding-top: 30px;
+  }
+
+  .home__explore .cars__list {
+    padding-top: 80px;
   }
 
   .car__card {
@@ -312,6 +349,39 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+  
+  @media (max-width: 768px) {
+
+    .cars__list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        row-gap: 2.5rem;
+      }
+
+    .explore__container h1 {
+      font-size: 2.5rem; 
+    }
+  
+    .car__name {
+      font-size: 1.4rem; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .explore__container {
+      height: auto; 
+      padding: 20px; 
+    }
+  
+    .cars__list {
+      gap: 1rem;
+      row-gap: 2rem;
+    }
+  
+    .car__name {
+      font-size: 1.2rem;
+    }
+  }
 
 .cars__button:hover {
     opacity: 85%;
@@ -487,13 +557,13 @@ body {
   }
 
   .about__card p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     color: #222;
   }
 
   .about__card h2 {
-    margin-bottom: 0;
+    margin-bottom: 0px;
     font-size: 2rem;
     color: #222;
   }

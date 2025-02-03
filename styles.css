@@ -134,7 +134,7 @@ body {
     width: 100%;
     margin: 0;
     overflow: visible;
-    background-image: url(e39m5v1.jpg);
+    background-image: url(images/e39m5v1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -188,7 +188,8 @@ body {
 
   .explore__container {
     min-height: 100vh;
-    height: 340vh;
+    height: auto;
+    padding-bottom: 50px;
     overflow: hidden;
   }
 
@@ -210,25 +211,10 @@ body {
     }
   }
 
-  @media(max-width: 1380px) {
-    .explore__container{
-        height: 310vh
-    }
-  }
-
-  @media(max-width: 1240px) {
-    .explore__container{
-        height: 280vh
-    }
-  }
 
   @media(max-width: 1100px) {
     .home__explore{
         height: 140vh
-    }
-
-    .explore__container{
-        height: 260vh
     }
   }
 
@@ -237,10 +223,6 @@ body {
         height: 130vh
     }
 
-    .explore__container{
-        height: auto;
-        padding-bottom: 50px;
-    }
   }
 
   @media(max-width: 900px) {
@@ -451,7 +433,9 @@ body {
 }
 
 .about__main{
-    height: 110vh;
+    padding: 30px 0;
+    min-height: 110vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -526,11 +510,12 @@ body {
   }
 
   .about__secondary {
-    height: 110vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding: 30px 0;
   }
 
   .secondary__content {
@@ -583,6 +568,12 @@ body {
     border-top: 1px solid grey;
 }
 
+@media (max-width: 868px){
+    .about__row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .about__row:first-child {
     border-top: none;
     margin-bottom: 1rem;
@@ -594,7 +585,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;}
+    overflow: hidden;
+}
 
 .car__content {
     max-width: 1200px;
@@ -613,6 +605,7 @@ body {
     object-fit: cover;
     vertical-align: middle;
     margin: 10px 0px 0px;
+    position: relative;
 }
 
 .car__content h1 {

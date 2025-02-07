@@ -76,3 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
         menuToggle.classList.toggle("active"); 
     });
 });
+
+document.querySelector(".contact__form").addEventListener("submit", function(event){
+    event.preventDefault();
+    alert("Your message has been sent!");
+    this.reset();
+});

@@ -693,3 +693,79 @@ body {
     aspect-ratio: 16/9;
     object-fit: cover;
 }
+
+.contact__container {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__content {
+    max-width: 1200px;
+    margin: 0px 20px 20px;
+    padding: 10px 20px 50px;
+    color: #222;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 0.8s ease-out forwards;
+}
+
+.contact__content h1 {
+    font-size: 3.5rem;
+}
+
+.contact__content p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact__form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__group label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form__group input,
+.form__group textarea {
+    max-width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid #555;
+}
+
+.contact__button {
+    background-color: rgb(231, 231, 231);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.8s;
+    width: 100%;
+    align-self: center;
+}
+
+.contact__button:hover {
+    background-color: #8B0000;
+    color: white;
+}

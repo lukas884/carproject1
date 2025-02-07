@@ -637,6 +637,7 @@ body {
     aspect-ratio: 16/9; 
     max-height: 80vh;
     position: relative;
+    margin-top: 10px;
 }
 
 .car__video {
